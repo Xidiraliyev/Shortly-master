@@ -1,0 +1,232 @@
+main {
+    flex-grow: 1;
+}
+
+// hero
+
+.hero__container {
+    padding-top: 13.9rem;
+    padding-bottom: 22.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    & img {
+        position: absolute;
+        right: -20%;
+    }
+}
+
+.hero__info {
+    width: 564px;
+
+    & .hero__description {
+        margin-bottom: 4.3rem;
+    }
+}
+
+// Statistics
+
+.statistics {
+    background: $porselain;
+}
+.statistics__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding-top: 47.6rem;
+    padding-bottom: 12rem;
+    gap: 5.6rem;
+}
+
+.shorted {
+    width: 100%;
+    position: absolute;
+    top: -75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.4rem;
+
+    &__link {
+        width: 100%;
+        border-radius: 5px;
+        background: #fff;
+        padding: 1.6rem 2.4rem 1.6rem 3.2rem;
+        display: flex;
+        justify-content: space-between;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 1.8;
+        letter-spacing: 0.15px;
+        color: $dark-gray;
+
+        & .original-link {
+        }
+
+        & .short-link {
+            color: $medium-turqoise;
+        }
+    }
+}
+.shorted__link-btn {
+    color: #fff;
+    background: $medium-turqoise;
+    padding: 0.9rem 3.1rem;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 2.4rem;
+    font-size: 1.5rem;
+    line-height: 0.68;
+
+    &:hover {
+        cursor: pointer;
+        background: $moring-glory;
+    }
+}
+
+.active {
+    color: #fff;
+    background: $bright-grey;
+    padding: 0.9rem 2.1rem;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 2.4rem;
+    font-size: 1.5rem;
+    line-height: 0.68;
+
+    &:hover {
+        background: $bright-grey;
+    }
+}
+.shorted__box {
+    background-image: url(../images/png/shorted-bg.png), url(../images/png/shorted-bg2.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: -30% -10%, 160% 70%;
+    padding-top: 5.2rem;
+    padding-bottom: 5.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: $bright-grey;
+    border-radius: 10px;
+
+    & .shorted__form {
+        display: flex;
+        align-items: center;
+        gap: 2.1rem;
+    }
+    & input {
+        width: 764px;
+        padding: 1.4rem 0 1.4rem 3.2rem;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+    }
+
+    & input::placeholder {
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 1.8;
+        letter-spacing: 0.15px;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+    }
+}
+
+.statistics__title {
+    text-align: center;
+    margin-bottom: 1.8rem;
+}
+.statistics__text {
+    width: 540px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.7;
+    letter-spacing: 0.122727px;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 0.8rem;
+        background: $medium-turqoise;
+        position: absolute;
+        top: 53%;
+    }
+}
+
+.card {
+    width: 350px;
+    background: #ffff;
+    border-radius: 5px;
+    padding-top: 7.9rem;
+    padding-left: 3.2rem;
+    padding-bottom: 4.7rem;
+    position: relative;
+
+    &__item {
+        position: absolute;
+        top: -44px;
+        left: 32px;
+        background: $bright-grey;
+        width: 88px;
+        height: 88px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &:nth-child(2) {
+        margin-top: 8.8rem;
+    }
+    &:nth-child(3) {
+        margin-top: 17rem;
+    }
+
+    &__title {
+        margin-bottom: 1rem;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 1.73;
+    }
+}
+
+// GET STARTED
+
+.getstarted {
+    background-color: $bright-grey;
+    background-image: url(../images/png/Path.png), url(../images/png/Path2.png),url(../images/png/Path3.png) ;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 130% 50%, -230% 130%, -130% -33%;
+}
+
+.getstarted__container {
+    padding-top: 5.7rem;
+    padding-bottom: 5.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3.2rem;
+
+    & .getstarted__title {
+        color: #fff;
+    }
+}

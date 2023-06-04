@@ -1,0 +1,39 @@
+.header__btn {
+    width: 100%;
+    padding: 1.5rem 2.3rem 1.5rem 2.4rem;
+    background: $medium-turqoise;
+    border-radius: 28px;
+    color: #fff;
+    &:hover {
+        background: $moring-glory;
+    }
+}
+
+.header__login-btn:hover {
+    color: $dark-gray;
+}
+.hero__btn {
+    @include button-style(#fff, 2rem, 0.66, $medium-turqoise, 28px);
+    padding: 2rem 4rem 2rem;
+
+    &:hover {
+        background: $moring-glory;
+    }
+}
+
+.shorted__btn {
+    @include button-style(#fff, 2rem, 0.66, $medium-turqoise, 10px);
+    padding: 2rem 4rem;
+    &:hover {
+        background: $moring-glory;
+        cursor: pointer;
+    }
+}
+
+.getstarted__btn {
+    @include button-style(#fff, 2rem, 0.66, $medium-turqoise, 28px);
+    padding: 1.5rem 4rem 1.5rem;
+    &:hover {
+        background: $moring-glory;
+    }
+}

@@ -1,0 +1,48 @@
+.footer {
+    background: #232127;
+
+    &__container {
+        display: flex;
+        align-items: flex-start;
+        padding-top: 7.1rem;
+        padding-bottom: 7rem;
+    }
+}
+
+.footer__lists {
+    margin-left: 26.3rem;
+    margin-right: auto;
+    display: flex;
+    gap: 7.8rem;
+}
+
+.footer__list-item {
+    font-size: 1.5rem;
+    line-height: 0.6;
+    letter-spacing: -0.234375px;
+    color: #bfbfbf;
+    margin-bottom: 2rem;
+    & h4 {
+        font-size: 1.6rem;
+        line-height: 0.66;
+        letter-spacing: -0.25px;
+        color: #ffffff;
+    }
+
+    &:nth-child(1) {
+        margin-bottom: 3rem;
+    }
+
+    & a:hover {
+        color: $medium-turqoise;
+    }
+}
+
+.socials {
+    display: flex;
+    gap: 2.4rem;
+}
+
+.socials__link:hover svg path {
+    fill: $medium-turqoise;
+}
